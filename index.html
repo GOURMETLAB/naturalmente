@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naturalmente Gourmet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo-titulo.png" alt="Logo Naturalmente Gourmet" class="logo">
+    <p>El sabor natural de tus días</p>
+  </header>
+
+  <section class="hero">
+  </section>
+
+  <section class="section">
+    <h3 class="titulo-seccion">Nuestros productos destacados</h3>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/Frame 125 (1).png" alt="Ensaladas">
+        <p>Ensaladas frescas artesanales</p>
+      </div>
+      <div class="producto">
+        <img src="img/Frame 124.png" alt="Tartas">
+        <p>Tartas de autor</p>
+      </div>
+      <div class="producto">
+        <img src="img/Frame 126.png" alt="Sándwiches">
+        <p>Sándwiches caseros listos para llevar</p>
+      </div>
+      <div class="producto">
+        <img src="img/Frame 127.png" alt="Yogur">
+        <p>Yogur griego con frutas</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ubicaciones">
+    <h3>¿Dónde podés encontrarnos?</h3>
+    <p>📍 Gourmet Lab Market - Leloir 485, Neuquén Capital</p>
+    <p>📍 Gourmet Lab Express - Belgrano 167, Neuquén Capital</p>
+    <p>🛵 También en <strong>PedidosYa</strong></p>
+  </section>
+
+  <footer>
+    <p>Naturalmente Gourmet · Artesanal, fresco y sabroso.</p>
+    <p>Seguinos en Instagram @naturalmente_gourmet</p>
+  </footer>
+
+  <!-- Botones flotantes -->
+  <div class="floating-button whatsapp" onclick="toggleMenu('whatsappMenu')">
+    <img src="img/whatsapp.png" alt="WhatsApp" class="icono">
+  </div>
+  <div id="whatsappMenu" class="floating-menu">
+    <a href="https://wa.me/5492996561692" target="_blank" class="menu-item">📱 WhatsApp Leloir</a>
+    <a href="https://wa.me/5492994299505" target="_blank" class="menu-item">📱 WhatsApp Belgrano</a>
+  </div>
+
+  <div class="floating-button pedidosya" onclick="toggleMenu('pedidosyaMenu')">
+    <img src="img/descarga.png" alt="PedidosYa" class="icono">
+  </div>
+  <div id="pedidosyaMenu" class="floating-menu">
+    <a href="https://www.pedidosya.com.ar/restaurantes/neuquen/gourmet-lab-879a48f7-ab61-4ab5-9bae-2919757b6c9a-menu?search=gourmet%20lab" target="_blank" class="menu-item">🍽️ PedidosYa Leloir</a>
+    <a href="https://www.pedidosya.com.ar/restaurantes/neuquen/plan-box-experiencia-gourmet-menu?search=plan%20box" target="_blank" class="menu-item">🍽️ PedidosYa Belgrano</a>
+  </div>
+
+  <script>
+    function toggleMenu(menuId) {
+      document.querySelectorAll('.floating-menu').forEach(menu => {
+        if (menu.id === menuId) {
+          menu.classList.toggle('show');
+        } else {
+          menu.classList.remove('show');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
