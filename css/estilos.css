@@ -166,57 +166,85 @@ footer {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* achica todo por defecto */
+  }
+
   header {
-    padding: 1.5rem 1rem;
+    padding: 1rem;
   }
 
   .logo {
-    width: 80%;
-    max-width: 250px;
+    width: 180px;
+    margin-bottom: 0.5rem;
+  }
+
+  header p {
+    font-size: 0.85rem;
   }
 
   .hero {
-    padding: 3rem 1rem;
-  }
-
-  .hero h2 {
-    font-size: 1.6rem;
-    line-height: 1.3;
-  }
-
-  .section {
     padding: 2rem 1rem;
   }
 
-  .producto img {
-    width: 100%;
-    height: auto;
+  .hero h2 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
   }
 
-  .floating-button .icono {
-    width: 50px;
-    height: 50px;
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  h3.titulo-seccion {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .producto p {
+    font-size: 0.85rem;
+  }
+
+  .ubicaciones h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .ubicaciones p {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding: 1.5rem 1rem;
   }
 
   .menu-item {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding: 6px 10px;
   }
 
+  .floating-button .icono {
+    width: 45px;
+    height: 45px;
+  }
+
   .floating-button.whatsapp {
-    bottom: 100px;
+    bottom: 90px;
   }
 
   .floating-button.pedidosya {
-    bottom: 40px;
+    bottom: 30px;
   }
 
   #whatsappMenu {
-    bottom: 100px;
+    bottom: 90px;
   }
 
   #pedidosyaMenu {
-    bottom: 40px;
+    bottom: 30px;
   }
 }
